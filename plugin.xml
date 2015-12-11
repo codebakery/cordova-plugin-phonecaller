@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-phonecaller"
+    version="0.0.1">
+    <name>Caller</name>
+    <description>Call phone numbers from your app</description>
+    <license>Apache 2.0</license>
+    <keywords>phonecaller,call</keywords>
+    <repo>https://github.com/codebakery/cordova-plugin-phonecaller.git</repo>
+    <issue>https://github.com/codebakery/cordova-plugin-phonecaller/issues</issue>
+
+    <js-module src="www/phonecaller.js" name="PhoneCaller">
+        <clobbers target="PhoneCaller" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PhoneCaller" >
+                <param name="android-package" value="io.codebakery.phonecaller.PhoneCaller"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/PhoneCaller.java" target-dir="src/io/codebakery/phonecaller" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PhoneCaller">
+                <param name="ios-package" value="PhoneCaller"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/PhoneCaller.h" />
+        <source-file src="src/ios/PhoneCaller.m" />
+    </platform>
+
+</plugin>

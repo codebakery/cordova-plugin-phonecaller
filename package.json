@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-phonecaller",
+  "version": "0.0.1",
+  "cordova": {
+    "id": "cordova-plugin-phonecaller",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "Call phone numbers from your app",
+  "repo": "https://github.com/codebakery/cordova-plugin-phonecaller.git",
+  "issue": "https://github.com/codebakery/cordova-plugin-phonecaller/issues",
+  "keywords": [
+    "cordova",
+    "phonecaller",
+    "call",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "CodeBakery",
+  "license": "Apache 2.0"
+}
