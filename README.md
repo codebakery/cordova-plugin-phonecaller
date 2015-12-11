@@ -2,9 +2,11 @@
 
 Call phone numbers from your app
 
-## Methods
+## Usage
 
-- window.PhoneCaller.call(phoneNumber: string, success: Function, [error: Function]) - starts a call to `phoneNumber`
+```javascript
+window.PhoneCaller.call(phoneNumber: string, success: Function, error?: Function)
+```
 
 ### Supported Platforms
 
