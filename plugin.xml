@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-phonecaller"
-    version="0.0.1">
+    version="0.0.2">
     <name>Caller</name>
     <description>Call phone numbers from your app</description>
     <license>Apache 2.0</license>
