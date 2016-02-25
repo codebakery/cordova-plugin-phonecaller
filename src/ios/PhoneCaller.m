@@ -9,7 +9,7 @@
     NSString *phoneNumber = [command.arguments objectAtIndex:0];
 
     if (phoneNumber != nil && [phoneNumber length] > 0) {
-        NSString *cleanedPhoneNumber = [[phoneNumber componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789-+()"] invertedSet]] componentsJoinedByString:@""];
+        NSString *cleanedPhoneNumber = [[phoneNumber componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789,-+()"] invertedSet]] componentsJoinedByString:@""];
         NSURL *telURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", cleanedPhoneNumber]];
         [[UIApplication sharedApplication] openURL:telURL];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
